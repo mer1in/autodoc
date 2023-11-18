@@ -23,5 +23,5 @@ def func_with_desc(param, iam):
 @route("/help", {"GET": ["anonymous"]})
 def help():
     """ Help page is also documented as an API call """
-    return get_paths()
+    return get_paths(), 200
 
